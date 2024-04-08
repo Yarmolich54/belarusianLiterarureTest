@@ -30,7 +30,7 @@
 
     .buttons {
         width: 70vw;
-        bottom: 0;
+        bottom: 5vh;
     }
     .btn {
         width: 40%;
@@ -88,7 +88,7 @@ body {
     overflow: hidden;
     align-items: center;
     background-color: rgb(233, 232, 227);
-    background-image: url(https://img.freepik.com/free-vector/gradient-earth-tone-background-in-soft-vintage_53876-117630.jpg?w=740&t=st=1712615526~exp=1712616126~hmac=06c63a1e4c1b7b33a901ec30867be978170089a7ec6703c5396be0a6ad6a84b2);
+    background-image: url(img/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -166,7 +166,7 @@ input[type="radio"] {
 .btn{
     font-family: "Raleway", sans-serif;
     color: rgb(14, 13, 10);
-    background-color: rgb(233, 232, 227);
+    background-color: rgb(220, 211, 167);
     border: none;
     border-radius: 1.5vw;
     transition: 0.1s ease-in;
