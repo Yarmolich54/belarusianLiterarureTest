@@ -109,8 +109,9 @@ nextButton.addEventListener('click', function() {
 });
 
 // не процуе
-idkButton = document.getElementById('idk');
-idkButton.addEventListener('click', function() {
-    console.log(rightAnswers[i]);
-    document.getElementById(`contAns${rightAnswers[i]}`).style.border = '0.2vw solid green';
-});
+
+// idkButton = document.getElementById('idk');
+// idkButton.addEventListener('click', function() {
+//     console.log(rightAnswers[i]);
+//     document.getElementById(`contAns${rightAnswers[i]}`).style.border = '0.2vw solid green';
+// });

@@ -9,6 +9,7 @@
     .question_container {
         width: 90vw;
     }
+    
 
     .number_count_block {
         width: 20%; 
@@ -97,7 +98,6 @@ body {
 
 .question_block {
     width: 100vw;
-    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,12 +160,13 @@ input[type="radio"] {
     height: 5ch;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .btn{
     font-family: "Raleway", sans-serif;
     color: rgb(14, 13, 10);
-    background-color: beige;
+    background-color: rgb(233, 232, 227);
     border: none;
     border-radius: 1.5vw;
     transition: 0.1s ease-in;
