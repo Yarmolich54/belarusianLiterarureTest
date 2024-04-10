@@ -34,7 +34,6 @@ nextButton.addEventListener('click', function() {
     var selectedAnswer = document.querySelector('input[name="answer"]:checked');
 
     if (selectedAnswer == undefined || selectedAnswer == null || selectedAnswer == 0) {
-        console.log('ответ не выбран');
     } else {
         i++;
     }
@@ -51,7 +50,6 @@ nextButton.addEventListener('click', function() {
 
     if (selectedValueNum == rightAnswers[i]) {
         rightCount++;
-        console.log(`Кол-во правильных ответов ${rightCount}`);
         rightAnswerBlock.style.border = '0.1vw solid green';
     } else {
         rightAnswerBlock.style.border = '0.1vw solid green';

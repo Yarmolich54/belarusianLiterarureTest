@@ -81,10 +81,6 @@ nextButton.addEventListener('click', function() {
     if (selectedValue == rightAnswerValue) {
       rightAnswers++;
     } 
-  console.log('номер индекса '+numberQuestionIndex);
-  console.log('n вопрос выбор '+selectedValue);
-  console.log('n вопрос правильный '+rightAnswerValue);
-  console.log('правильные ответы '+rightAnswers);
   numberQuestionIndex++;
 
   if (numberQuestionIndex < questions.length - 1) {
@@ -94,4 +90,5 @@ nextButton.addEventListener('click', function() {
       document.querySelector('.answers_block').style.display = 'none';
       nextButton.style.display = 'none';
   }
+  selectedAnswer.checked = false;
 });
