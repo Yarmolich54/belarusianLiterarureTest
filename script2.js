@@ -20,6 +20,26 @@ const questions = [
         correctAnswer: 'b'
       },
       {
+        question: "Вопрос 3: Какой язык программирования вы предпочитаете?",
+        answers: {
+          'a': "кке",
+          'b': "рйк",
+          'c': "ор",
+          'd': "фпра"
+        },
+          correctAnswer: 'c'
+        },
+        {
+          question: "Вопрос 4: Какой язык программирования вы предпочитаете?",
+          answers: {
+            'a': "кке",
+            'b': "рйк",
+            'c': "ор",
+            'd': "фпра"
+          },
+            correctAnswer: 'd'
+          },
+      {
         question: "ЕСЛИ ВЫ ВИДИТЕ ЭТОТ ВОПРОС ТО С КОДОМ ЧТО ТО НЕ ТАК",
         answers: {
           'a': "А",
@@ -27,7 +47,7 @@ const questions = [
           'c': "ААА",
           'd': "АААА"
         },
-          correctAnswer: 'b'
+          correctAnswer: '0'
         }
       
     
@@ -52,23 +72,22 @@ function showTextes() {
 }
 
 showTextes();
-nextButton.addEventListener('click', function() {
-  if (numberQuestionIndex == 0) {
+nextButton.addEventListener('click', function() {  
+  var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+  var selectedValue = selectedAnswer.value ? selectedAnswer.value : null;
+  var rightAnswerValue = questions[numberQuestionIndex].correctAnswer;
+  
+
     if (selectedValue == rightAnswerValue) {
       rightAnswers++;
     } 
-  }
-  
-  var selectedAnswer = document.querySelector('input[name="answer"]:checked');
-  var selectedValue = selectedAnswer.value;
-  var rightAnswerValue = questions[numberQuestionIndex].correctAnswer;
-  
+  console.log('номер индекса '+numberQuestionIndex);
+  console.log('n вопрос выбор '+selectedValue);
+  console.log('n вопрос правильный '+rightAnswerValue);
+  console.log('правильные ответы '+rightAnswers);
   numberQuestionIndex++;
 
   if (numberQuestionIndex < questions.length - 1) {
-    if (selectedValue == rightAnswerValue) {
-      rightAnswers++;
-    } 
     showTextes();
   } else {
       questionText.textContent = `тест пройден ${rightAnswers}/${questions.length - 1}`;
