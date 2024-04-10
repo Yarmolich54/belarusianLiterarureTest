@@ -4,6 +4,7 @@
 @media screen and (min-width: 0px) and (max-width: 800px) {
     body {
         font-size: 5vw;
+        background-size: auto;
     }
 
     .question_container {
@@ -39,9 +40,10 @@
     
 }
 
-@media screen and (min-width: 801px) and (max-width: 1920px) {
+@media screen and (min-width: 801px) {
     body {
         font-size: 1.5vw;
+        background-size: cover;
     }
 
     .question_container {
@@ -91,7 +93,6 @@ body {
     background-image: url(img/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     font-family: "Raleway", sans-serif;
     color: rgb(14, 13, 10);
 }
@@ -159,7 +160,7 @@ input[type="radio"] {
     position: absolute;
     height: 5ch;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     z-index: 1;
 }
 
