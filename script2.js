@@ -73,5 +73,6 @@ nextButton.addEventListener('click', function() {
   } else {
       questionText.textContent = `тест пройден ${rightAnswers}/${questions.length - 1}`;
       document.querySelector('.answers_block').style.display = 'none';
+      nextButton.style.direction = 'none';
   }
 });
