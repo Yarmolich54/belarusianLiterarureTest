@@ -150,7 +150,7 @@ nextButton.addEventListener('click', function() {
     numCountBlock.textContent = `${numberQuestionIndex+1}/${questions.length - 1}`;
     showTextes();
   } else {
-      questionText.textContent = `тест пройден ${rightAnswers}/${questions.length - 1}`;
+      questionText.textContent = `тэст пройдзен ${rightAnswers}/${questions.length - 1}`;
       document.querySelector('.answers_block').style.display = 'none';
       nextButton.style.display = 'none';
       numCountBlock.style.display = 'none';
